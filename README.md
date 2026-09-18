@@ -1,2 +1,8 @@
-# uxid231-sa4264
-An environment that hosts Selinam's website project for UXID 231.
+# Selinam Asuo
+
+## About
+An multi-page website enivronment built with
+
+## Topic
+
+## AI Usage
