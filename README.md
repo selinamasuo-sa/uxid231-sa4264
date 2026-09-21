@@ -17,4 +17,4 @@ www.nintendo.com/us/explore/characters/zelda/) as loose reference for the aesthe
 This project will likely use AI tools (such as ChatGPT Edu and Claude) to assist in generating code
 snippets for page formatting, CSS styling, and other design elements. All images, videos, and other media
 will be created by me, or co-created with other people with proper attributions given. All references to
-AI content will be properly cited in the README.md file and/or in the code comments.
+AI content will be properly cited in the `README.md` file and/or in the code comments.
