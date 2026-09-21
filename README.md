@@ -10,8 +10,7 @@ This project focuses on creating a portfolio website that is responsive and mobi
 showcase my works from various projects, such as web development, graphic and poster design, video
 editing, and other projects from my major-specific endeavors in computer science and computer engineering.
 I aim for the site to have a modern Zelda-themed aesthetic (i.e. Breath of the Wild, Tears of the Kingdom,
-Ocarina of Time on Nintendo Switch 2). I will be using [The Legend of Zelda series Nintendo page](https:/
-www.nintendo.com/us/explore/characters/zelda/) as loose reference for the aesthetic and design of the site.
+Ocarina of Time on Nintendo Switch 2). I will be using [The Legend of Zelda series Nintendo page](https://www.nintendo.com/us/explore/characters/zelda/) as loose reference for the aesthetic and design of the site.
 
 ## AI Use
 This project will likely use AI tools (such as ChatGPT Edu and Claude) to assist in generating code
