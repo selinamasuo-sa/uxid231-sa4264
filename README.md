@@ -7,13 +7,13 @@ development, and user experience design, alongside my major's interests in creat
 software and hardware systems.
 
 What initially drew me to computer engineering and computer science was my interest in video games and DIY
-computers. One of my underclassmen classes in highschool required me to download Adobe Illustrator on my
-old Dell Optiplex desktop that did not have a dedicated GPU, which made it impossible for me to work on
+computers. One of my underclassmen graphic design classes in highschool required me to download Adobe Illustrator
+on my old Dell Optiplex desktop that did not have a dedicated GPU, which made it impossible for me to work on
 projects and assignments outside of the Macs in school. That inspired me to learn more about my Optiplex
 and the parts that made the computer worked. I learned that older parts typically draw less power meaning
 there wasn’t a need to have a huge power supply in them like many modern machines do. I eventually came
 across an AMD Radeon RX 6400 GPU after learning that it didn’t draw much power and didn't need a dedicated
-PCIe power cable, but had just power enough to run Illustrator. I felt great about this purchase and was
+PCIe cable, but had just power enough to run Illustrator. I felt great about this purchase and was
 glad I put in the time and research necessary to make the decision. From there, I looked into getting a
 laptop that could more efficiently complete the same tasks that my old desktop could. After spending months
 looking at various videos from YouTubers such as Hardware Canucks and Jarrod’s Tech, I eventually settled
