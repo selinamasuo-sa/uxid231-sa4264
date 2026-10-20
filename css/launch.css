@@ -1,0 +1,31 @@
+body{
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+    
+}
+
+.nav-bar ul {
+  list-style: none;     /* Removes bullet points */
+  margin: 0;            /* Strips default browser margins */
+  padding: 0;           /* Strips default browser padding */
+  display: flex;        /* Aligns your navigation items horizontally */
+  gap: 2rem;            /* Creates clean spacing between the links */
+}
