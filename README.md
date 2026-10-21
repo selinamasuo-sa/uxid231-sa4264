@@ -50,4 +50,8 @@ as frequently as I would have liked to).
 This project will likely use AI tools (such as ChatGPT Edu and Claude) to assist in generating code
 snippets for page formatting, CSS styling, and other design elements. All images, videos, and other media
 will be created by me, or co-created with other people with proper attributions given. All references to
-AI content will be properly cited in the `README.md` file and/or in the code comments.
+AI content will be properly listed below and are in the respective files they were used as comments.
+
+- Gemini 3.5: Generated the initial empty CSS selector skeleton structure in `css/main.css` by referencing my Week 3 HTML file and my original Wix portfolio categories. Organized the rules from general to specific to follow the cascade.
+- Gemini 3.5: Assisted in formatting the horizontal inline flex properties for the `.nav-bar ul` class from the prompt "replicate the wix horizontal layout style using vanilla css lists". 
+- No AI was used for the semantic HTML5 layout structure in `projects.html`, `index.html`, `contact.html`, the custom portfolio text descriptions, or the selection and categorization of my engineering and graphic design assets.

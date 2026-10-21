@@ -1,278 +1,144 @@
 /* Created with assistance from Google Gemini on 2026-10-19 */
 
 /* ==========================================================================
-   1. GLOBAL ARCHITECTURE & DESIGN SYSTEMS
+   0. GLOBAL ARCHITECTURE & DESIGN SYSTEMS
    ========================================================================== */
-@import url('https://googleapis.com');
+/* @import url('https://googleapis.com'); */
 
-* {
-  box-sizing: border-box;
-}
+/* ==========================================================================
+   1. TYPE SELECTORS — Broad page-wide defaults
+   ========================================================================== */
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #121212;       /* Deep matte black background canvas */
-  color: hsl(0, 0%, 100%);                  /* High-contrast crisp white typography */
-  font-family: "TikTok Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
+  /* Intent: Set deep Zelda TOTK dark charcoal background and baseline mobile sans-serif typography scales */
+}
+
+h1 {
+  /* Intent: Bold primary collection page heading sizes and weights */
+}
+
+h2 {
+  /* Intent: Sub-section headers designating the 4 distinct project categories */
+}
+
+p {
+  /* Intent: Standard paragraph sizes for card summaries and welcome introductions */
+}
+
+img {
+  /* Intent: Prevent oversized layout blowouts; scale fluidly with small-screen widths */
+}
+
+figure {
+  /* Intent: Strip native browser alignment padding to keep touch cards clean */
 }
 
 /* ==========================================================================
-   2. SITE CORE HEADER NAVIGATION
+   2. COMBINATORS ON TYPE SELECTORS — Elements inside a region
    ========================================================================== */
+
+header nav {
+  /* Intent: Establish layout placement structures for menu items at the screen apex */
+}
+
+footer p {
+  /* Intent: Secondary typography scaling reducing fine-print rights labels */
+}
+
+/* ==========================================================================
+   3. CLASS SELECTORS — Reusable components
+   ========================================================================== */
+
 .site-header {
-  width: 100%;
-  background-color: rgba(18, 18, 18, 0.95);
-  backdrop-filter: blur(8px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid #2d2d2d;
-  padding: 1.25rem 0;
+  /* Intent: Apply semi-transparent glassmorphism filters pinned cleanly to viewport top */
 }
 
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #ffffff;
-  letter-spacing: -0.02em;
-}
-
-/* Integrated baseline rule template code */
 .nav-bar ul {
-  list-style: none;     /* Removes bullet points */
-  margin: 0;            /* Strips default browser margins */
-  padding: 0;           /* Strips default browser padding */
-  display: flex;        /* Aligns your navigation items horizontally */
-  gap: 2rem;            /* Creates clean spacing between the links */
-}
-
-.nav-bar ul a {
-  text-decoration: none;
-  color: #aaaaaa;                  /* Readable secondary light gray label font */
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.nav-bar ul a:hover, 
-.nav-bar ul a.active {
-  color: #ffffff;
-}
-
-/* ==========================================================================
-   3. MAIN HUB CONTAINERS & TYPOGRAPHY
-   ========================================================================== */
-.projects-main-container {
-  max-width: 1200px;
-  margin: 2.5rem auto;
-  padding: 0 1.5rem;
-}
-
-.projects-main-container h1 {
-  font-size: 2.25rem;
-  font-weight: 800;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: -0.03em;
-}
-
-.intro-text {
-  color: #aaaaaa;
-  font-size: 1.05rem;
-  margin: 0 0 3.5rem 0;
-}
-
-/* Category Lane Row Blocks */
-.category-group {
-  margin-bottom: 4rem;
-}
-
-.category-group h2 {
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin: 0 0 1.25rem 0;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-  border-left: 3px solid #2f80ed;  /* Focused interaction highlight blue token */
-  padding-left: 0.75rem;
-}
-
-/* ==========================================================================
-   4. TOUCH-FRIENDLY HORIZONTAL SCROLL CAROUSEL (MOBILE-FIRST)
-   ========================================================================== */
-.project-carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;   /* Forces the snap friction stop mechanics */
-  gap: 1.25rem;
-  padding-bottom: 1rem;
-  -webkit-overflow-scrolling: touch; /* Smooth momentum tracking on iOS */
-  scrollbar-width: none;           /* Hides browser scrollbar tracking for Firefox */
-}
-
-/* Hides browser scrollbar tracking tracks cleanly inside Webkit engines */
-.project-carousel::-webkit-scrollbar {
-  display: none;
-}
-
-/* Individual Interactive Project Cards */
-.project-card {
-  flex: 0 0 78%;                  /* Card utilizes 78% of device frame width */
-  scroll-snap-align: start;       /* Perfectly locks target element edge on scroll tracking */
-  text-decoration: none;
-  color: inherit;
-  outline: none;
-}
-
-.project-card figure {
+  /* AI: prompt "replicate the wix horizontal layout style using vanilla css lists" — Gemini 3.5, 2026-10-21. */
+  list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
-  background-color: #1e1e1e;      /* Elevated surface container charcoal */
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #2d2d2d;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  gap: 2rem;
 }
 
-.project-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;            /* Locks down uniform 1:1 squares across carousels */
-  object-fit: cover;              /* Safely masks input frames without distortion warp */
-  display: block;
+.projects-main-container {
+  /* Intent: Center padding boundaries customized for compact phone widths (~375px) */
 }
 
-.project-card figcaption {
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 1.25rem;
-  color: #ffffff;
-  background-color: #1e1e1e;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;        /* Adds smooth trail dots if title limits break bounds */
+.category-group {
+  /* Intent: Separate vertical category lanes with clean margin baselines */
 }
 
-/* Focused UI Touch Indicators for Keyboard Accessibility tabbing */
-.project-card:focus figure {
-  border-color: #2f80ed;
-  box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.3);
+.project-carousel {
+  /* Intent: Configure horizontal touch flex-rows with active native scroll-snap tracks */
 }
 
-/* ==========================================================================
-   5. PRODUCTION FRAMEWORK RESPONSIVE BREAKPOINT (DESKTOP)
-   ========================================================================== */
-@media (min-width: 768px) {
-  .projects-main-container {
-    margin: 4rem auto;
-  }
-
-  .projects-main-container h1 {
-    font-size: 3rem;
-  }
-
-  .category-group h2 {
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-  }
-
-  /* Kills the horizontal carousel lanes; expands smoothly into structural grids */
-  .project-carousel {
-    overflow-x: visible;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
-    padding-bottom: 0;
-  }
-
-  .project-card {
-    flex: none;
-  }
-
-  /* Elegant desktop cursor hover physics triggers */
-  .project-card:hover figure {
-    transform: translateY(-4px);
-    border-color: #4f4f4f;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  }
-
-  .project-card:hover figcaption {
-    color: #2f80ed;
-  }
+.project-card {
+  /* Intent: Constraint child widths to ~78% so next items peek past viewport frames */
 }
 
-/* ==========================================================================
-   6. SITE FOOTER & UTILITY ACTIONS
-   ========================================================================== */
 .site-footer {
-  max-width: 1200px;
-  margin: 6rem auto 3rem auto;
-  padding: 3rem 1.5rem 0 1.5rem;
-  border-top: 1px solid #2d2d2d;
-  text-align: center;
-}
-
-.site-footer p {
-  color: #aaaaaa;
-  font-size: 0.95rem;
-  margin: 0 0 1.5rem 0;
+  /* Intent: Anchor fine-print items with a clear demarcation rule border across the base */
 }
 
 .footer-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 2rem;
-  margin: 0 0 2.5rem 0;
-  padding: 0;
-}
-
-.footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-  color: #2f80ed;
+  /* Intent: Flex formatting arranging social profile anchors in a tidy inline track */
 }
 
 .back-to-top {
-  display: inline-block;
-  color: #aaaaaa;
-  text-decoration: none;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border: 1px solid #2d2d2d;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  margin-bottom: 3rem;
+  /* Intent: Frame scroll button capsule using thin outline shapes */
 }
 
-.back-to-top:hover {
-  background-color: #2d2d2d;
-  color: #ffffff;
+.copyright {
+  /* Intent: Low-visibility gray tint adjustments for bottom license rows */
 }
 
-/* Combined selector parent structure avoids the need for !important flags */
+/* ==========================================================================
+   4. COMBINATORS INVOLVING CLASSES — Specific component overrides
+   ========================================================================== */
+
+.category-group h2 {
+  /* Intent: Left-border stripe feature utilizing glowing neon TotK green tones */
+}
+
+.project-card img {
+  /* Intent: Lock down strict 1:1 square aspects with object-fit masking counters */
+}
+
+.project-card figcaption {
+  /* Intent: Dark interior card card backing surfaces separating labels cleanly */
+}
+
+.nav-bar ul a.current {
+  /* Intent: Ignite active site location tag using the neon green accent text style */
+}
+
 .site-footer p.copyright {
-  font-size: 0.8rem;
-  color: #666666;
-  margin: 0;
+  /* Intent: Increase rule selector specificity to override global paragraph margins */
+}
+
+/* ==========================================================================
+   5. ID SELECTORS — Unique, one-off elements used sparingly
+   ========================================================================== */
+
+#top {
+  /* Intent: Structural scroll target landmark anchoring anchor jump link locations */
+}
+
+/* ==========================================================================
+   6. INTERACTIVE STATES — Dynamic user response behaviors
+   ========================================================================== */
+
+.nav-bar ul a:hover,
+.footer-links a:hover {
+  /* Intent: Highlight active text anchors with glowing teal transitions on user touch */
+}
+
+.project-card:focus-visible {
+  /* Intent: Accessibility ring outline indicating selection box bounds for keyboard users */
+}
+
+.back-to-top:focus-visible {
+  /* Intent: Focus style indicator surrounding bottom page scroll buttons */
 }
