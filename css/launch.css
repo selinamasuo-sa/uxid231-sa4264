@@ -74,7 +74,7 @@ footer p {
     /* Intent: Configure horizontal touch flex-rows with active native scroll-snap tracks */
 }
 
-.project-card {
+.collection-card {
     /* Intent: Constraint child widths to ~80% so next items peek past viewport frames */
 }
 
@@ -102,11 +102,11 @@ footer p {
     /* Intent: Left-border stripe feature utilizing glowing neon TOTK green tones */
 }
 
-.project-card img {
+.collection-card img {
     /* Intent: Lock down strict 1:1 square aspects with object-fit masking counters */
 }
 
-.project-card figcaption {
+.collection-card figcaption {
     /* Intent: Dark interior card card backing surfaces separating labels cleanly */
 }
 
@@ -122,7 +122,7 @@ footer p {
     /* Intent: Replicate the clean horizontal header bar running across the top of the TOTK interface menu */
 }
 
-.project-card figure {
+.collection-card figure {
     /* Intent: Set individual project slots to deep matte inventory charcoal squares with dark slate borders */
 }
 
@@ -143,7 +143,7 @@ footer p {
     /* Intent: Highlight active text anchors with glowing teal transitions on user touch */
 }
 
-.project-card:focus-visible {
+.collection-card:focus-visible {
     /* Intent: Accessibility ring outline indicating selection box bounds for keyboard users */
 }
 
@@ -151,14 +151,14 @@ footer p {
     /* Intent: Focus style indicator surrounding bottom page scroll buttons */
 }
 
-.project-card:hover {
+.collection-card:hover {
     /* Intent: Shift the entire text label color to TOTK ancient gold when the project card is selected */
 }
 
-.project-card:hover figure {
+.collection-card:hover figure {
     /* Intent: Change the square item border to a brilliant, glowing off-white/beige to replicate the game's menu cursor */
 }
 
-.project-card:focus-visible figure {
+.collection-card:focus-visible figure {
     /* Intent: Trigger a bright off-white focus ring outline for accessible keyboard tracking */
 }
