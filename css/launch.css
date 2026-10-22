@@ -1,7 +1,7 @@
 /* Created with assistance from Google Gemini on 2026-10-19 */
 
 /* ==========================================================================
-   0. GLOBAL ARCHITECTURE & DESIGN SYSTEMS
+    0. GLOBAL ARCHITECTURE & DESIGN SYSTEMS
    ========================================================================== */
 /* @import url('https://googleapis.com'); */
 
@@ -10,27 +10,27 @@
    ========================================================================== */
 
 body {
-  /* Intent: Set deep Zelda TOTK dark charcoal background and baseline mobile sans-serif typography scales */
+    /* Intent: Set deep Zelda TOTK dark charcoal background and baseline mobile sans-serif typography scales */
 }
 
 h1 {
-  /* Intent: Bold primary collection page heading sizes and weights */
+    /* Intent: Bold primary collection page heading sizes and weights */
 }
 
 h2 {
-  /* Intent: Sub-section headers designating the 4 distinct project categories */
+    /* Intent: Sub-section headers designating the 4 distinct project categories */
 }
 
 p {
-  /* Intent: Standard paragraph sizes for card summaries and welcome introductions */
+    /* Intent: Standard paragraph sizes for card summaries and welcome introductions */
 }
 
 img {
-  /* Intent: Prevent oversized layout blowouts; scale fluidly with small-screen widths */
+    /* Intent: Prevent oversized layout blowouts; scale fluidly with small-screen widths */
 }
 
 figure {
-  /* Intent: Strip native browser alignment padding to keep touch cards clean */
+    /* Intent: Strip native browser alignment padding to keep touch cards clean */
 }
 
 /* ==========================================================================
@@ -38,11 +38,11 @@ figure {
    ========================================================================== */
 
 header nav {
-  /* Intent: Establish layout placement structures for menu items at the screen apex */
+    /* Intent: Establish layout placement structures for menu items at top of screen */
 }
 
 footer p {
-  /* Intent: Secondary typography scaling reducing fine-print rights labels */
+    /* Intent: Secondary typography scaling reducing fine-print rights labels */
 }
 
 /* ==========================================================================
@@ -50,48 +50,48 @@ footer p {
    ========================================================================== */
 
 .site-header {
-  /* Intent: Apply semi-transparent glassmorphism filters pinned cleanly to viewport top */
+    /* Intent: Apply semi-transparent glassmorphism filters pinned cleanly to viewport top */
 }
 
 .nav-bar ul {
-  /* AI: prompt "replicate the wix horizontal layout style using vanilla css lists" — Gemini 3.5, 2026-10-21. */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 2rem;
+    /* AI: prompt "replicate the WIX horizontal layout style using vanilla CSS lists" — Gemini 3.5, 2026-10-21. */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
 }
 
 .projects-main-container {
-  /* Intent: Center padding boundaries customized for compact phone widths (~375px) */
+    /* Intent: Center padding boundaries customized for compact phone widths (~375px) */
 }
 
 .category-group {
-  /* Intent: Separate vertical category lanes with clean margin baselines */
+    /* Intent: Separate vertical category lanes with clean margin baselines */
 }
 
 .project-carousel {
-  /* Intent: Configure horizontal touch flex-rows with active native scroll-snap tracks */
+    /* Intent: Configure horizontal touch flex-rows with active native scroll-snap tracks */
 }
 
 .project-card {
-  /* Intent: Constraint child widths to ~78% so next items peek past viewport frames */
+    /* Intent: Constraint child widths to ~80% so next items peek past viewport frames */
 }
 
 .site-footer {
-  /* Intent: Anchor fine-print items with a clear demarcation rule border across the base */
+    /* Intent: Anchor fine-print items with a clear demarcation rule border across the base */
 }
 
 .footer-links {
-  /* Intent: Flex formatting arranging social profile anchors in a tidy inline track */
+    /* Intent: Flex formatting arranging social profile anchors in a tidy inline track */
 }
 
 .back-to-top {
-  /* Intent: Frame scroll button capsule using thin outline shapes */
+    /* Intent: Frame scroll button capsule using thin outline shapes */
 }
 
 .copyright {
-  /* Intent: Low-visibility gray tint adjustments for bottom license rows */
+    /* Intent: Low-visibility gray tint adjustments for bottom license rows */
 }
 
 /* ==========================================================================
@@ -99,23 +99,31 @@ footer p {
    ========================================================================== */
 
 .category-group h2 {
-  /* Intent: Left-border stripe feature utilizing glowing neon TotK green tones */
+    /* Intent: Left-border stripe feature utilizing glowing neon TOTK green tones */
 }
 
 .project-card img {
-  /* Intent: Lock down strict 1:1 square aspects with object-fit masking counters */
+    /* Intent: Lock down strict 1:1 square aspects with object-fit masking counters */
 }
 
 .project-card figcaption {
-  /* Intent: Dark interior card card backing surfaces separating labels cleanly */
+    /* Intent: Dark interior card card backing surfaces separating labels cleanly */
 }
 
 .nav-bar ul a.current {
-  /* Intent: Ignite active site location tag using the neon green accent text style */
+    /* Intent: Ignite active site location tag using the neon green accent text style */
 }
 
 .site-footer p.copyright {
-  /* Intent: Increase rule selector specificity to override global paragraph margins */
+    /* Intent: Increase rule selector specificity to override global paragraph margins */
+}
+
+.site-header nav {
+    /* Intent: Replicate the clean horizontal header bar running across the top of the TOTK interface menu */
+}
+
+.project-card figure {
+    /* Intent: Set individual project slots to deep matte inventory charcoal squares with dark slate borders */
 }
 
 /* ==========================================================================
@@ -123,7 +131,7 @@ footer p {
    ========================================================================== */
 
 #top {
-  /* Intent: Structural scroll target landmark anchoring anchor jump link locations */
+    /* Intent: Structural scroll target landmark anchoring anchor jump link locations */
 }
 
 /* ==========================================================================
@@ -132,13 +140,25 @@ footer p {
 
 .nav-bar ul a:hover,
 .footer-links a:hover {
-  /* Intent: Highlight active text anchors with glowing teal transitions on user touch */
+    /* Intent: Highlight active text anchors with glowing teal transitions on user touch */
 }
 
 .project-card:focus-visible {
-  /* Intent: Accessibility ring outline indicating selection box bounds for keyboard users */
+    /* Intent: Accessibility ring outline indicating selection box bounds for keyboard users */
 }
 
 .back-to-top:focus-visible {
-  /* Intent: Focus style indicator surrounding bottom page scroll buttons */
+    /* Intent: Focus style indicator surrounding bottom page scroll buttons */
+}
+
+.project-card:hover {
+    /* Intent: Shift the entire text label color to TOTK ancient gold when the project card is selected */
+}
+
+.project-card:hover figure {
+    /* Intent: Change the square item border to a brilliant, glowing off-white/beige to replicate the game's menu cursor */
+}
+
+.project-card:focus-visible figure {
+    /* Intent: Trigger a bright off-white focus ring outline for accessible keyboard tracking */
 }
