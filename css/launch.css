@@ -14,11 +14,11 @@ body {
 }
 
 h1 {
-    /* Intent: Bold primary collection page heading sizes and weights */
+    /* Intent: Establish primary page-title typography across portfolio and project pages */
 }
 
 h2 {
-    /* Intent: Sub-section headers designating the 4 distinct project categories */
+    /* Intent: Establish secondary section-heading hierarchy throughout portfolio content */
 }
 
 p {
@@ -62,7 +62,7 @@ footer p {
     gap: 2rem;
 }
 
-.projects-main-container {
+.portfolio-main {
     /* Intent: Center padding boundaries customized for compact phone widths (~375px) */
 }
 
@@ -74,8 +74,44 @@ footer p {
     /* Intent: Configure horizontal touch flex-rows with active native scroll-snap tracks */
 }
 
-.collection-card {
+.category-card {
     /* Intent: Constraint child widths to ~80% so next items peek past viewport frames */
+}
+
+.project-group-page {
+    /* Intent: Establish shared page-level styling hooks for pages containing a group of related projects */
+}
+
+.project-group-main {
+    /* Intent: Establish primary content boundaries for project-group pages */
+}
+
+.project-hero {
+    /* Intent: Create large visual introduction combining project imagery, title, and parent category */
+}
+
+.project-parent {
+    /* Intent: Identify the broader portfolio category containing the current project group */
+}
+
+.group-introduction {
+    /* Intent: Provide introductory context describing the current project group */
+}
+
+.group-projects {
+    /* Intent: Separate individual project selections from the project-group introduction */
+}
+
+.project-selector {
+    /* Intent: Arrange individual project choices using the TOTK-inspired selection interface */
+}
+
+.project-card {
+    /* Intent: Represent one selectable individual project contained within a project group */
+}
+
+.project-group-navigation {
+    /* Intent: Provide navigation from a project-group page back to the main portfolio hub */
 }
 
 .site-footer {
@@ -102,11 +138,11 @@ footer p {
     /* Intent: Left-border stripe feature utilizing glowing neon TOTK green tones */
 }
 
-.collection-card img {
+.category-card img {
     /* Intent: Lock down strict 1:1 square aspects with object-fit masking counters */
 }
 
-.collection-card figcaption {
+.category-card figcaption {
     /* Intent: Dark interior card card backing surfaces separating labels cleanly */
 }
 
@@ -122,8 +158,32 @@ footer p {
     /* Intent: Replicate the clean horizontal header bar running across the top of the TOTK interface menu */
 }
 
-.collection-card figure {
-    /* Intent: Set individual project slots to deep matte inventory charcoal squares with dark slate borders */
+.category-card figure {
+    /* Intent: Set individual project-group slots to deep matte inventory charcoal squares with dark slate borders */
+}
+
+.project-hero img {
+    /* Intent: Scale project-group hero artwork fluidly while preserving its source aspect ratio */
+}
+
+.project-hero h1 {
+    /* Intent: Position and emphasize the project-group name over the hero artwork */
+}
+
+.project-hero p.project-parent {
+    /* Intent: Position the parent portfolio category beneath the project-group title */
+}
+
+.project-card figure {
+    /* Intent: Frame individual project thumbnails as selectable TOTK-inspired menu items */
+}
+
+.project-card img {
+    /* Intent: Present individual project thumbnails consistently without distorting source imagery */
+}
+
+.project-card figcaption {
+    /* Intent: Display individual project names clearly within project selection cards */
 }
 
 /* ==========================================================================
@@ -143,7 +203,7 @@ footer p {
     /* Intent: Highlight active text anchors with glowing teal transitions on user touch */
 }
 
-.collection-card:focus-visible {
+.category-card:focus-visible {
     /* Intent: Accessibility ring outline indicating selection box bounds for keyboard users */
 }
 
@@ -151,14 +211,30 @@ footer p {
     /* Intent: Focus style indicator surrounding bottom page scroll buttons */
 }
 
-.collection-card:hover {
-    /* Intent: Shift the entire text label color to TOTK ancient gold when the project card is selected */
+.category-card:hover {
+    /* Intent: Shift the entire text label color to TOTK ancient gold when the project-group card is selected */
 }
 
-.collection-card:hover figure {
+.category-card:hover figure {
     /* Intent: Change the square item border to a brilliant, glowing off-white/beige to replicate the game's menu cursor */
 }
 
-.collection-card:focus-visible figure {
+.category-card:focus-visible figure {
     /* Intent: Trigger a bright off-white focus ring outline for accessible keyboard tracking */
+}
+
+.project-card:focus-visible {
+    /* Intent: Provide a visible keyboard-selection boundary around individual project choices */
+}
+
+.project-card:hover {
+    /* Intent: Shift selected individual project text to the ancient gold interaction accent */
+}
+
+.project-card:hover figure {
+    /* Intent: Apply the glowing off-white TOTK-inspired selection frame to hovered projects */
+}
+
+.project-card:focus-visible figure {
+    /* Intent: Apply the same selection frame during keyboard navigation */
 }
