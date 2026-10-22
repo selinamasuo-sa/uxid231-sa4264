@@ -146,6 +146,10 @@ footer p {
     /* Intent: Dark interior card card backing surfaces separating labels cleanly */
 }
 
+.nav-bar ul > a {
+    /* Intent: Separate logo from other navigation links in navigation bar */
+}
+
 .nav-bar ul a.current {
     /* Intent: Ignite active site location tag using the neon green accent text style */
 }
@@ -184,6 +188,10 @@ footer p {
 
 .project-card figcaption {
     /* Intent: Display individual project names clearly within project selection cards */
+}
+
+.project-meta {
+    /* Intent: Provide a clean, structured list of project "metadata" for each individual project */
 }
 
 /* ==========================================================================
