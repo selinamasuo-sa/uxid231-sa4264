@@ -43,6 +43,9 @@ a {
     color: var(--links);
 }
 
+/* AI: prompt asking how to style hover and focus effects for links using my
+   existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-10-29.
+   Reviewed and adapted to match my Figma design and course scope. */
 a:hover,
 a:focus-visible {
     color: var(--brand);
@@ -70,6 +73,9 @@ a:focus-visible {
     color: var(--charcoal);
 }
 
+/* AI: prompt asking how to style hover and focus effects for cards/links using my
+   existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-10-29.
+   Reviewed and adapted to match my Figma design and course scope. */
 .project-card:hover,
 .contact-card:hover {
     background-color: var(--brand);
@@ -80,6 +86,9 @@ a:focus-visible {
     color: var(--black);
 }
 
+/* AI: prompt asking how to style hover and focus effects for cards/links using my
+   existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-10-29.
+   Reviewed and adapted to match my Figma design and course scope. */
 .view-all-projects:hover,
 .view-all-projects:focus-visible {
     background-color: var(--bright-gold);
