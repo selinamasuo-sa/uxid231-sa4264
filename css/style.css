@@ -11,6 +11,10 @@
     --charcoal: hsl(0, 0%, 13%);
 
     --sky-blue: hsl(180, 98%, 50%);
+
+    --background: var(--zonai-green-dark);
+    --foreground: var(--zonai-ivory);
+    --background-card: var(--zonai-ivory);
 }
 
 h1 {
@@ -24,8 +28,8 @@ h4 {
 }
 
 body {
-    background-color: var(--zonai-green-dark);
-    color: var(--zonai-ivory);
+    background-color: var(--background);
+    color: var(--foreground);
 }
 
 nav,
@@ -38,7 +42,7 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus-visible {
     color: var(--zonai-green-bright);
 }
 
@@ -51,14 +55,11 @@ a:focus {
 }
 
 .project-card {
-    background-color: var(--zonai-ivory);
+    background-color: var(--background-card);
     color: var(--charcoal);
 }
 
-.project-card h3 {
-    color: var(--charcoal);
-}
-
+.project-card h3,
 .project-card a {
     color: var(--charcoal);
 }
@@ -73,20 +74,17 @@ a:focus {
 }
 
 .view-all-projects:hover,
-.view-all-projects:focus {
+.view-all-projects:focus-visible {
     background-color: var(--bright-gold);
     color: var(--black);
 }
 
 .contact-card {
-    background-color: var(--zonai-ivory);
+    background-color: var(--background-card);
     color: var(--charcoal);
 }
 
-.contact-card h2 {
-    color: var(--charcoal);
-}
-
+.contact-card h2,
 .contact-card a {
     color: var(--charcoal);
 }
@@ -96,6 +94,6 @@ a:focus {
 }
 
 .contact-card a:hover,
-.contact-card a:focus {
+.contact-card a:focus-visible {
     color: var(--dim-gold);
 }
