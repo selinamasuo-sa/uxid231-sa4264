@@ -49,3 +49,20 @@ a:focus {
 .current {
     color: var(--bright-gold);
 }
+
+.project-card {
+    background-color: var(--zonai-ivory);
+    color: var(--charcoal);
+}
+
+.project-card h3 {
+    color: var(--charcoal);
+}
+
+.project-card a {
+    color: var(--charcoal);
+}
+
+.project-card:hover {
+    background-color: var(--zonai-green-bright);
+}
