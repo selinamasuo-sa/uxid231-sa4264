@@ -18,15 +18,16 @@ body {
     color: var(--zonai-ivory);
 }
 
-nav {
+nav,
+footer {
     background-color: var(--black);
 }
 
-nav a:hover,
-nav a:focus-visible {
+a:hover,
+a:focus {
     color: var(--zonai-green-bright);
 }
 
-nav a.current {
+.current {
     color: var(--bright-gold);
 }
