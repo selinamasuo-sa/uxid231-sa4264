@@ -23,10 +23,6 @@ h4 {
     color: var(--zonai-ivory);
 }
 
-.context-text {
-    color: var(--sky-blue);
-}
-
 body {
     background-color: var(--zonai-green-dark);
     color: var(--zonai-ivory);
@@ -50,6 +46,10 @@ a:focus {
     color: var(--bright-gold);
 }
 
+.context-text {
+    color: var(--sky-blue);
+}
+
 .project-card {
     background-color: var(--zonai-ivory);
     color: var(--charcoal);
@@ -65,4 +65,15 @@ a:focus {
 
 .project-card:hover {
     background-color: var(--zonai-green-bright);
+}
+
+.view-all-projects {
+    background-color: var(--dim-gold);
+    color: var(--black);
+}
+
+.view-all-projects:hover,
+.view-all-projects:focus {
+    background-color: var(--bright-gold);
+    color: var(--black);
 }
