@@ -77,3 +77,25 @@ a:focus {
     background-color: var(--bright-gold);
     color: var(--black);
 }
+
+.contact-card {
+    background-color: var(--zonai-ivory);
+    color: var(--charcoal);
+}
+
+.contact-card h2 {
+    color: var(--charcoal);
+}
+
+.contact-card a {
+    color: var(--charcoal);
+}
+
+.contact-card:hover {
+    background-color: var(--zonai-green-bright);
+}
+
+.contact-card a:hover,
+.contact-card a:focus {
+    color: var(--dim-gold);
+}
