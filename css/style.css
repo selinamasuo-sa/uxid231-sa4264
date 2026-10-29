@@ -13,7 +13,7 @@
     --sky-blue: hsl(180, 98%, 50%);
 
     --background: var(--zonai-green-dark);
-    --foreground: var(--zonai-ivory);
+    --foreground: var(--white);
     --background-card: var(--zonai-ivory);
     --brand: var(--zonai-green-bright);
     --links: var(--sky-blue);
@@ -56,10 +56,11 @@ a:focus-visible {
     color: var(--sky-blue);
 }
 
-/* AI: prompt asking how to style reusable project cards using my
+/* AI: prompt asking how to style reusable project & contact cards using my
    existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-10-29.
    Reviewed and adapted to match my Figma design and course scope. */
-.project-card {
+.project-card,
+.contact-card {
     background-color: var(--background-card);
     color: var(--charcoal);
 }
@@ -69,7 +70,8 @@ a:focus-visible {
     color: var(--charcoal);
 }
 
-.project-card:hover {
+.project-card:hover,
+.contact-card:hover {
     background-color: var(--brand);
 }
 
@@ -84,21 +86,9 @@ a:focus-visible {
     color: var(--black);
 }
 
-/* AI: prompt asking how to adapt the project-card color treatment
-   for contact cards — ChatGPT (GPT-5.6), 2026-10-29.
-   Reviewed and adapted for my Contact page. */
-.contact-card {
-    background-color: var(--background-card);
-    color: var(--charcoal);
-}
-
 .contact-card h2,
 .contact-card a {
     color: var(--charcoal);
-}
-
-.contact-card:hover {
-    background-color: var(--brand);
 }
 
 .contact-card a:hover,
