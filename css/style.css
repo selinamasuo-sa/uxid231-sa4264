@@ -17,6 +17,14 @@
     --background-card: var(--zonai-ivory);
     --brand: var(--zonai-green-bright);
     --links: var(--sky-blue);
+
+    --font-body-small: 0.875rem;
+    --font-body-regular: 1rem;
+    --font-body-large: 1.125rem;
+    --font-title-regular: 1.25rem;
+    --font-title-large: 1.5rem;
+    --font-display-regular: 2rem;
+    --font-display-large: 2.5rem;
 }
 
 h1 {
