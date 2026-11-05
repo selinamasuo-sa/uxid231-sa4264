@@ -195,6 +195,12 @@ a:focus-visible {
 .project-card:hover,
 .contact-card:hover {
     background-color: var(--brand);
+}
+
+.project-card:hover .project-card-title,
+.project-card:hover a,
+.contact-card:hover h2,
+.contact-card:hover a {
     font-weight: var(--font-weight-semibold);
 }
 
@@ -203,7 +209,8 @@ a:focus-visible {
     font-weight: var(--font-weight-medium);
 }
 
-.project-card-category {
+.project-card-category,
+.project-card-type {
     font-family: var(--font-stack-system);
     font-weight: var(--font-weight-heavy);
     letter-spacing: var(--letter-spacing-wide);
