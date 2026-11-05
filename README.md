@@ -3,7 +3,7 @@
 ## About
 I am Selinam Asuo, a Drexel student majoring in Computer Engineering and minoring in User Experience and
 Interaction Design (UXID). I am currently in my second year and have an interest in graphic design, web
-development, and user experience design, alongside my major's interests in creating and maintaing computer
+development, and user experience design, alongside my major's interests in creating and maintaining computer
 software and hardware systems.
 
 What initially drew me to computer engineering and computer science was my interest in video games and DIY
