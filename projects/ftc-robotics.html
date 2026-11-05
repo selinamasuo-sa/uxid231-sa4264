@@ -8,12 +8,16 @@
     </head>
     <body id = "top">
         <header class = "site-header">
-            <nav class = "nav-bar" aria-label="Primary">
-                <ul class = "nav-links">
-                    <li><a href="../portfolio.html" class="current">Portfolio</a></li>
-                    <li><a href="../index.html" class="logo-link">Home (My Logo)</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
+            <header class = "site-header">
+            <nav class = "primary-nav" aria-label="Primary">
+                <details class = "nav-dropdown">
+                    <summary>Navigation Menu</summary>
+                    <ul class = "nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html" class="logo-link current">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </details>
             </nav>
         </header>
         <main class = "project-page">
@@ -42,7 +46,7 @@
 
             <section>
                 <h2>&gt; Projects &lt;</h2>
-                <p>Here are a few projects that I have worked on while on Tech Heroes:</p>
+                <p>Here are a few projects that I have worked on:</p>
 
                 <article class="project-card">
                     <img src="images/index/uaarpg-60B3-logo-reduced.jpg" alt="A picture of a comic-style honeybun used on one of the FTC Bake Sale posters for this volume." width="90" height="90"/>
