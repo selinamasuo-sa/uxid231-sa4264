@@ -88,9 +88,9 @@ body {
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-stack-body);
-    font-size: var(--font-size-body-small);
+    font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-base);
-    line-height: 1.6;
+    line-height: 1.5;
     text-wrap: pretty;
     letter-spacing: var(--letter-spacing-normal);
 }
