@@ -52,11 +52,13 @@ snippets for page formatting, CSS styling, and other design elements. All images
 will be created by me, or co-created with other people with proper attributions given. All references to
 AI content will be properly listed below and are in the respective files they were used as comments.
 
-- **ChatGPT (GPT-5.6)** — used as a development assistant while redesigning and implementing this portfolio. I asked for feedback on translating my Figma mockups into semantic HTML, specifically the use of `<section>`, `<article>`, headings, navigation, project cards, contact cards, and footer structure. I reviewed and adapted the suggestions to fit my own Figma design and course requirements.
+- **ChatGPT (GPT-5.6)** ~ used as a development assistant while redesigning and implementing this portfolio. I asked for feedback on translating my Figma mockups into semantic HTML, specifically the use of `<section>`, `<article>`, headings, navigation, project cards, contact cards, and footer structure. I reviewed and adapted the suggestions to fit my own Figma design and course requirements.
 
-- **ChatGPT (GPT-5.6)** — used to review and explain CSS selectors and color-token implementation for the Week 5 milestone. Prompts included how to translate my Figma color variables into HSL custom properties, how to apply those tokens with `var()`, and how to implement `:hover` and `:focus-visible` states. I reviewed and modified the suggestions to match my existing stylesheet and course requirements.
+- **ChatGPT (GPT-5.6)** ~ used to review and explain CSS selectors and color-token implementation for the Week 5 milestone. Prompts included how to translate my Figma color variables into HSL custom properties, how to apply those tokens with `var()`, and how to implement `:hover` and `:focus-visible` states. I reviewed and modified the suggestions to match my existing stylesheet and course requirements.
 
-- **ChatGPT (GPT-5.6)** — used to review my GitHub repository incrementally and identify HTML/CSS issues, including semantic structure, relative links, reusable project/contact card classes, and consistency between the implementation and my Figma scaffold.
+- **ChatGPT (GPT-5.6)** ~ used to review my GitHub repository incrementally and identify HTML/CSS issues, including semantic structure, relative links, reusable project/contact card classes, and consistency between the implementation and my Figma scaffold.
+
+- **ChatGPT (GPT-5.6)** ~ used to assist in creating a dropdown navigation menu for mobile and tablet viewports. I reviewed and adapted the suggestions to match my Figma design and course requirements.
 
 No AI was used for written portfolio content, visual design, project selection, implementation decisions, Figma mockups, color palette decisions, or the selection and categorization of my engineering and graphic design assets.
 
