@@ -147,6 +147,13 @@ a:focus-visible {
     color: var(--brand);
 }
 
+.nav-dropdown a {
+    font-family: var(--font-stack-display);
+    font-size: var(--font-size-display-small);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+}
+
 .current {
     color: var(--bright-gold);
 }
