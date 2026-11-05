@@ -56,21 +56,21 @@
     --links: var(--sky-blue);
 
     --font-size-body-small: 0.875rem;
-    --font-size-body-regular: 1rem;
+    --font-size-body-medium: 1rem;
     --font-size-body-large: 1.125rem;
-    --font-size-title-regular: 1.25rem;
+    --font-size-title-medium: 1.25rem;
     --font-size-title-large: 1.5rem;
     --font-size-display-small: 2rem;
-    --font-size-display-regular: 2.5rem;
+    --font-size-display-medium: 2.5rem;
 
     --font-stack-display: "Stack Sans Notch", Figtree, sans-serif;
     --font-stack-body: Figtree, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --font-stack-system: "JetBrains Mono", ui-monospace, Monaco, Consolas, "Courier New", monospace;
 
     --font-weight-light: 300;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
+    --font-weight-base: 400;
+    --font-weight-medium: 512;
+    --font-weight-semibold: 625;
     --font-weight-bold: 700;
     --font-weight-heavy: 800;
     --font-weight-black: 900;
@@ -89,20 +89,23 @@ body {
     color: var(--foreground);
     font-family: var(--font-stack-body);
     font-size: var(--font-size-body-small);
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-base);
     line-height: 1.6;
     text-wrap: pretty;
     letter-spacing: var(--letter-spacing-normal);
+}
+
+h1, h2 {
+    letter-spacing: var(--letter-spacing-tight);
 }
 
 
 h1 {
     color: var(--brand);
     font-family: var(--font-stack-display);
-    font-size: var(--font-size-display-regular);
+    font-size: var(--font-size-display-medium);
     font-weight: var(--font-weight-medium);
     line-height: 1.2;
-    letter-spacing: var(--letter-spacing-tight);
 }
 
 h2,
@@ -129,7 +132,7 @@ footer {
 }
 
 footer h2 {
-    font-size: var(--font-size-title-regular);
+    font-size: var(--font-size-title-medium);
 }
 
 a {
@@ -153,7 +156,7 @@ a:focus-visible {
 }
 
 .field-of-study {
-    font-size: var(--font-size-body-regular);
+    font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-medium);
     line-height: 1.4;
 }
@@ -192,14 +195,15 @@ a:focus-visible {
 .project-card:hover,
 .contact-card:hover {
     background-color: var(--brand);
+    font-weight: var(--font-weight-semibold);
 }
 
-.project-title {
+.project-card-title {
     font-family: var(--font-stack-body);
     font-weight: var(--font-weight-medium);
 }
 
-.project-category {
+.project-card-category {
     font-family: var(--font-stack-system);
     font-weight: var(--font-weight-heavy);
     letter-spacing: var(--letter-spacing-wide);
@@ -209,15 +213,15 @@ a:focus-visible {
     background-color: var(--dim-gold);
     color: var(--black);
     font-family: var(--font-stack-system);
-    font-size: var(--font-size-body-regular);
+    font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-semibold);
 }
 
 /* AI: prompt asking how to style hover and focus effects for cards/links using my
    existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-10-29.
    Reviewed and adapted to match my Figma design and course scope. */
-.view-all-projects:hover,
-.view-all-projects:focus-visible {
+.project-gold-button:hover,
+.project-gold-button:focus-visible {
     background-color: var(--bright-gold);
     color: var(--black);
 }
@@ -230,4 +234,38 @@ a:focus-visible {
 .contact-card a:hover,
 .contact-card a:focus-visible {
     color: var(--dim-gold);
+}
+
+.contact-card-title {
+    font-family: var(--font-stack-body);
+    font-weight: var(--font-weight-normal);
+}
+
+.contact-card-link {
+    font-family: var(--font-stack-system);
+    font-size: var(--font-size-body-medium);
+    font-weight: var(--font-weight-heavy);
+}
+
+.project-page-title {
+    color: var(--zonai-ivory);
+    font-size: var(--font-size-display-small);
+}
+
+.project-page-subtitle {
+    color: var(--sky-blue);
+    font-size: var(--font-size-title-medium);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.4;
+}
+
+.project-detail-label {
+    font-size: var(--font-size-body-medium);
+    font-weight: var(--font-weight-medium);
+}
+
+.project-detail-value {
+    font-family: var(--font-stack-system);
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-semibold);
 }
