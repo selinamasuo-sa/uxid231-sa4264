@@ -57,7 +57,6 @@
     --foreground: var(--white);
     --background-card: var(--zonai-ivory);
     --brand: var(--zonai-green-bright);
-    --links: var(--sky-blue);
 
     --font-size-body-small: 0.875rem;
     --font-size-body-medium: 1rem;
@@ -89,9 +88,11 @@
     --space-wide: 2rem;
     --space-loose: 4rem;
 
+    --border-radius-thin: 0.125rem;    
     --border-radius-small: 0.25rem;
     --border-radius-medium: 0.5rem;
     --border-radius-large: 1rem;
+    --border-radius-thick: 2rem;
 }
 
 main {
@@ -170,6 +171,22 @@ a:focus-visible {
     color: var(--brand);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-item {
+    margin-bottom: var(--space-wide);
+    text-align: center;
+}
+
+.gallery-item .figcap-description {
+    font-size: var(--font-size-body-small);
+    font-style: italic;
+    margin-top: var(--space-slim);
+}
+
 nav,
 footer {
     background-color: var(--black);
@@ -193,7 +210,8 @@ footer .back-to-top {
     text-decoration: underline;
 }
 
-footer .back-to-top:hover {
+footer .back-to-top:hover,
+footer .back-to-top:focus-visible {
     color: var(--bright-gold);
 }
 
@@ -374,6 +392,36 @@ footer .nav-links a:focus-visible {
     font-family: var(--font-stack-system);
     font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-heavy);
+}
+
+.project-hero {
+    padding-block: var(--space-wide);
+}
+
+.project-info {
+    background-color: var(--background-card);
+    border-radius: 0 0 var(--border-radius-thick) var(--border-radius-thick);
+    padding: var(--space-wide);
+}
+
+.project-details {
+    background-color: var(--brand);
+    border: var(--border-radius-small) solid var(--black);
+    border-radius: var(--border-radius-large);
+    color: var(--charcoal);
+    margin-bottom: var(--space-wide);
+    padding: var(--space-normal);
+}
+
+.project-details a {
+    color: var(--charcoal);
+    text-decoration: none;
+}
+
+.project-details a:hover,
+.project-details a:focus-visible {
+    color: var(--dim-gold);
+    text-decoration: underline;
 }
 
 .project-page-title {
