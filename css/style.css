@@ -82,10 +82,28 @@
     --letter-spacing-tight: -0.03em;
     --letter-spacing-normal: 0em;
     --letter-spacing-wide: 0.025em;
+
+    --space-tight: 0.25rem;
+    --space-slim: 0.5rem;
+    --space-normal: 1rem;
+    --space-wide: 2rem;
+    --space-loose: 4rem;
+
+    --border-radius-small: 0.25rem;
+    --border-radius-medium: 0.5rem;
+    --border-radius-large: 1rem;
+}
+
+main {
+    padding-inline: var(--space-normal);
+}
+
+.content-wrapper {
+    max-width: 32rem;
+    margin-inline: auto;
 }
 
 body {
-    max-width: 60ch;
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-stack-body);
@@ -96,10 +114,18 @@ body {
     letter-spacing: var(--letter-spacing-normal);
 }
 
-h1, h2 {
-    letter-spacing: var(--letter-spacing-tight);
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: var(--space-normal);
 }
 
+h1,
+h2 {
+    letter-spacing: var(--letter-spacing-tight);
+}
 
 h1 {
     color: var(--brand);
@@ -112,6 +138,7 @@ h1 {
 h2,
 h3 {
     color: var(--zonai-ivory);
+    margin-bottom: var(--space-slim);
 }
 
 h2 {
@@ -127,13 +154,8 @@ h3 {
     line-height: 1.3;
 }
 
-nav,
-footer {
-    background-color: var(--black);
-}
-
-footer h2 {
-    font-size: var(--font-size-title-medium);
+section {
+    margin-bottom: var(--space-wide);
 }
 
 a {
@@ -148,6 +170,61 @@ a:focus-visible {
     color: var(--brand);
 }
 
+nav,
+footer {
+    background-color: var(--black);
+}
+
+footer {
+    font-family: var(--font-stack-system);
+    padding: var(--space-normal);
+    text-align: center;
+    text-decoration: none;
+}
+
+footer h2 {
+    font-size: var(--font-size-title-medium);
+    margin: var(--space-slim) 0;
+}
+
+footer .back-to-top {
+    color: var(--brand);
+    padding: var(--space-slim);
+    text-decoration: underline;
+}
+
+footer .back-to-top:hover {
+    color: var(--bright-gold);
+}
+
+footer .copyright {
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-light);
+    margin: var(--space-wide) 0 0;
+}
+
+footer .nav-links {
+    color: var(--white);
+    list-style: none;
+    margin: 0;
+    padding: 0 0 var(--space-wide);
+}
+
+footer .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer .nav-links a:hover,
+footer .nav-links a:focus-visible {
+    color: var(--brand);
+}
+
+.site-header {
+    padding-inline: var(--space-normal);
+    background-color: var(--black);
+}
+
 .nav-dropdown a {
     font-family: var(--font-stack-display);
     font-size: var(--font-size-display-small);
@@ -157,6 +234,15 @@ a:focus-visible {
 
 .current {
     color: var(--bright-gold);
+}
+
+.hero {
+    padding-block: var(--space-wide);
+    text-align: center;
+}
+
+.hero p {
+    max-width: none;
 }
 
 .tagline {
@@ -174,9 +260,32 @@ a:focus-visible {
     font-size: var(--font-size-body-small);
 }
 
+.about {
+    margin-bottom: var(--space-loose);
+}
+
+.about p {
+    max-width: 48ch;
+}
+
+.contact-info {
+    margin-top: var(--space-loose);
+}
+
+.project-button-wrapper {
+    text-align: center;
+}
+
 .project-gold-button {
+    background-color: var(--dim-gold);
+    color: var(--black);
+    font-family: var(--font-stack-system);
+    font-size: var(--font-size-body-medium);
+    font-weight: var(--font-weight-semibold);
     font-family: var(--font-stack-system);
     letter-spacing: 0.025em;
+    border-radius: var(--border-radius-large);
+    padding: var(--space-slim) var(--space-normal);
 }
 
 .project-page h1 {
@@ -190,6 +299,8 @@ a:focus-visible {
 .contact-card {
     background-color: var(--background-card);
     color: var(--charcoal);
+    border-radius: var(--border-radius-medium);
+    margin-bottom: var(--space-normal);
 }
 
 .project-card h3,
@@ -212,6 +323,10 @@ a:focus-visible {
     font-weight: var(--font-weight-semibold);
 }
 
+.project-card-content {
+    padding: var(--space-slim);
+}
+
 .project-card-title {
     font-family: var(--font-stack-body);
     font-weight: var(--font-weight-medium);
@@ -224,14 +339,6 @@ a:focus-visible {
     letter-spacing: var(--letter-spacing-wide);
 }
 
-.project-gold-button {
-    background-color: var(--dim-gold);
-    color: var(--black);
-    font-family: var(--font-stack-system);
-    font-size: var(--font-size-body-medium);
-    font-weight: var(--font-weight-semibold);
-}
-
 /* AI: prompt asking how to style hover and focus effects for cards/links using my
    existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-10-29.
    Reviewed and adapted to match my Figma design and course scope. */
@@ -239,6 +346,12 @@ a:focus-visible {
 .project-gold-button:focus-visible {
     background-color: var(--bright-gold);
     color: var(--black);
+}
+
+.contact-card {
+    border-radius: var(--border-radius-medium);
+    margin-bottom: var(--space-normal);
+    padding: var(--space-slim) var(--space-normal);
 }
 
 .contact-card h2,
@@ -253,7 +366,8 @@ a:focus-visible {
 
 .contact-card-title {
     font-family: var(--font-stack-body);
-    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-title-medium);
+    font-weight: var(--font-weight-base);
 }
 
 .contact-card-link {
@@ -270,7 +384,7 @@ a:focus-visible {
 .project-page-subtitle {
     color: var(--sky-blue);
     font-size: var(--font-size-title-medium);
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-base);
     line-height: 1.4;
 }
 
