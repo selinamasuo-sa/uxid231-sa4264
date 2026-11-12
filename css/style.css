@@ -38,6 +38,10 @@
     font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --zonai-green-bright: hsl(157, 100%, 50%);
     --zonai-green-dark: hsl(158, 73%, 9%);
