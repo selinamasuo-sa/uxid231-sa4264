@@ -171,6 +171,10 @@ a:focus-visible {
     color: var(--brand);
 }
 
+article a {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -221,12 +225,21 @@ footer .copyright {
     margin: var(--space-wide) 0 0;
 }
 
-footer .nav-links {
-    color: var(--white);
+footer .nav-links,
+ul.nav-links {
     list-style: none;
     margin: 0;
-    padding: 0 0 var(--space-wide);
+    text-align: center;
 }
+
+ul.nav-links {
+    padding: 0 0 var(--space-normal);
+}
+
+footer .nav-links li {
+    padding: 0 0 var(--space-slim);
+    color: var(--white);
+}   
 
 footer .nav-links a {
     color: var(--white);
@@ -257,10 +270,6 @@ footer .nav-links a:focus-visible {
 .hero {
     padding-block: var(--space-wide);
     text-align: center;
-}
-
-.hero p {
-    max-width: none;
 }
 
 .tagline {
@@ -301,9 +310,9 @@ footer .nav-links a:focus-visible {
     font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-semibold);
     font-family: var(--font-stack-system);
-    letter-spacing: 0.025em;
+    letter-spacing: var(--letter-spacing-wide);
     border-radius: var(--border-radius-large);
-    padding: var(--space-slim) var(--space-normal);
+    padding: var(--space-slim) var(--space-wide);
 }
 
 .project-page h1 {
