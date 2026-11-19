@@ -93,6 +93,8 @@
     --border-radius-medium: 0.5rem;
     --border-radius-large: 1rem;
     --border-radius-thick: 2rem;
+
+    --menu-bar-width: 2.25rem;
 }
 
 main {
@@ -100,7 +102,7 @@ main {
 }
 
 .content-wrapper {
-    max-width: 32rem;
+    max-width: 60rem;
     margin-inline: auto;
 }
 
@@ -251,9 +253,31 @@ footer .nav-links a:focus-visible {
     color: var(--brand);
 }
 
+.primary-nav {
+    position: relative;
+}
+
 .site-header {
     padding-inline: var(--space-normal);
     background-color: var(--black);
+    padding: var(--space-slim) var(--space-normal);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+.nav-dropdown .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-normal) 0;
+    text-align: center;
+}
+
+.nav-dropdown .nav-links li {
+    margin-bottom: var(--space-slim);
+}
+
+.nav-dropdown .nav-links li:last-child {
+    margin-bottom: 0;
 }
 
 .nav-dropdown a {
@@ -263,12 +287,43 @@ footer .nav-links a:focus-visible {
     text-decoration: none;
 }
 
+.menu-toggle {
+    cursor: pointer;
+    list-style: none;
+    position: absolute;
+    right: var(--space-normal);
+    top: var(--space-wide);
+}
+
+.menu-toggle::-webkit-details-marker {
+    display: none;
+}
+
+.menu-bar {
+    background-color: var(--zonai-ivory);
+    border-radius: var(--border-radius-thin);
+    display: block;
+    height: 0.25rem;
+    margin-bottom: var(--space-slim);
+    width: var(--menu-bar-width);
+}
+
+.menu-bar:nth-child(2) {
+    margin-inline: auto;
+    width: 1.5rem;
+}
+
+.nav-dropdown[open] .menu-bar:last-child {
+    margin-inline: auto;
+    width: 0.75rem;
+}
+
 .current {
     color: var(--bright-gold);
 }
 
 .hero {
-    padding-block: var(--space-wide);
+    padding-block: calc(var(--space-wide) * 2);
     text-align: center;
 }
 
@@ -289,10 +344,6 @@ footer .nav-links a:focus-visible {
 
 .about {
     margin-bottom: var(--space-loose);
-}
-
-.about p {
-    max-width: 48ch;
 }
 
 .contact-info {
@@ -328,6 +379,8 @@ footer .nav-links a:focus-visible {
     color: var(--charcoal);
     border-radius: var(--border-radius-medium);
     margin-bottom: var(--space-normal);
+    max-width: 48rem;
+    margin-inline: auto;
 }
 
 .project-card h3,
@@ -418,7 +471,7 @@ footer .nav-links a:focus-visible {
     border: var(--border-radius-small) solid var(--black);
     border-radius: var(--border-radius-large);
     color: var(--charcoal);
-    margin-bottom: var(--space-wide);
+    margin: var(--space-slim);
     padding: var(--space-normal);
 }
 
