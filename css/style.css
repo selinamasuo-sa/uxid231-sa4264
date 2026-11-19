@@ -582,7 +582,7 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
         linear-gradient(
             to bottom,
             transparent 40%,
-            var(--black-translucent) 100%
+            var(--black-semi-opaque) 100%
         ),
         url("../images/pjct-pg-bg/color-splash-smash-hero-raw.png");
     background-position: bottom;
@@ -593,10 +593,23 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
         linear-gradient(
             to bottom,
             transparent 10%,
-            var(--black-semi-opaque) 100%
+            var(--black-translucent) 40%,
+            var(--black-semi-opaque) 70%
         ),
         url("../images/pjct-pg-bg/ftc-bake-sale-3-hero.png");
     background-position: center;
+}
+
+.ftc-engineering-portfolio-hero {
+        background-image:
+        linear-gradient(
+            to bottom,
+            transparent 10%,
+            var(--black-translucent) 40%,
+            var(--black-semi-opaque) 70%
+        ),
+        url("../images/pjct-pg-bg/ftc-engineering-portfolio-hero.png");
+    background-position: top;
 }
 
 .ftc-robotics-hero {
