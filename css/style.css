@@ -50,6 +50,7 @@
     --dim-gold: hsl(45, 100%, 32%);
     --bright-gold: hsl(47, 100%, 50%);
     --black: hsl(0, 0%, 0%);
+    --black-translucent: hsla(0, 0%, 0%, 0.6);
     --charcoal: hsl(0, 0%, 13%);
     --sky-blue: hsl(180, 98%, 50%);
 
@@ -462,13 +463,39 @@ footer .nav-links a:focus-visible {
 }
 
 .project-hero {
-    padding-block: var(--space-wide);
+    background-color: var(--black);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--space-normal);
+    margin-bottom: 0;
+    min-height: 18rem;
+    position: relative;
+}
+
+.project-hero-text {
+    bottom: var(--space-normal);
+    left: var(--space-normal);
+    position: absolute;
+}
+
+/* AI: prompt asking asking how to style an ivory textured gradient over the hero image to achive a textured
+fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
+   Reviewed and adapted to match my Figma design and course scope. */
+.hero-texture {
+    background-image: url("../images/pjct-pg-bg/textured-grad-asset.png");
+    background-repeat: repeat;
+    bottom: 0;
+    height: calc(var(--space-normal) * 1.5);
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .project-info {
     background-color: var(--background-card);
     border-radius: 0 0 var(--border-radius-thick) var(--border-radius-thick);
-    padding: var(--space-wide);
+    padding: var(--space-normal);
 }
 
 .project-details {
@@ -478,7 +505,7 @@ footer .nav-links a:focus-visible {
     color: var(--charcoal);
     margin: var(--space-slim);
     padding: var(--space-normal);
-}
+    }
 
 .project-details a {
     color: var(--charcoal);
@@ -494,6 +521,7 @@ footer .nav-links a:focus-visible {
 .project-page-title {
     color: var(--zonai-ivory);
     font-size: var(--font-size-display-small);
+    margin-bottom: var(--space-slim);
 }
 
 .project-page-subtitle {
@@ -503,13 +531,43 @@ footer .nav-links a:focus-visible {
     line-height: 1.4;
 }
 
+.project-detail-row {
+    margin-bottom: var(--space-tight);
+    position: relative;
+}
+
+.project-detail-row:last-child {
+    margin-bottom: 0;
+}
+
 .project-detail-label {
     font-size: var(--font-size-body-medium);
     font-weight: var(--font-weight-medium);
 }
 
+/* AI: prompt asking how to position project detail values to be inline with the labels while being right aligned and maintaining the label's left alignment — ChatGPT (GPT-5.6), 2026-11-19.
+   Reviewed and adapted to match my Figma design and course scope. */
 .project-detail-value {
     font-family: var(--font-stack-system);
     font-size: var(--font-size-body-small);
     font-weight: var(--font-weight-semibold);
+    margin: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+.first-brand-proposal-hero {
+    /* AI: prompt asking how to style a hero section with a background image and gradient overlay using
+    my existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-11-19.*/
+    background-image: url("../images/pjct-pg-bg/first-brand-proposal-hero.png");
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.ftc-robotics-hero {
+    background-image: url("../images/pjct-pg-bg/ftc-robotics-hero.png");
+    background-position: center bottom;
+    background-size: cover;
 }
