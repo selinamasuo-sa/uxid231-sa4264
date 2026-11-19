@@ -266,9 +266,17 @@ footer .nav-links a:focus-visible {
     z-index: 50;
 }
 .nav-dropdown .nav-links {
+    /* AI: prompt asking how to apply a gradient background to a dropdown menu using my
+   existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-11-18. */
+    background-color: var(--black);
+    left: calc(var(--space-normal) * -1);
+    right: calc(var(--space-normal) * -1);
+    top: 100%;
+    position: absolute;
+    z-index: 10;
     list-style: none;
-    padding: 0;
-    margin: var(--space-normal) 0;
+    padding: var(--space-normal) 0;
+    margin: 0;
     text-align: center;
 }
 
