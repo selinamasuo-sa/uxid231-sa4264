@@ -58,7 +58,9 @@ AI content will be properly listed below and are in the respective files they we
 
 - **ChatGPT (GPT-5.6)** ~ used to review my GitHub repository incrementally and identify HTML/CSS issues, including semantic structure, relative links, reusable project/contact card classes, and consistency between the implementation and my Figma scaffold.
 
-- **ChatGPT (GPT-5.6)** ~ used to assist in creating a dropdown navigation menu for mobile and tablet viewports. I reviewed and adapted the suggestions to match my Figma design and course requirements.
+- **ChatGPT (GPT-5.6)** ~ used to assist in creating a dropdown navigation menu for mobile and tablet viewports. I reviewed and adapted the suggestions to match my Figma scaffold.
+
+- **ChatGPT (GPT-5.6)** ~ used to assist in creating a project textured hero gradient and project detail section template that matched my Figma scaffold. The positioning of the project detail labels and values was challenging to implement, and I asked for suggestions on how to structure the HTML and CSS. I reviewed and adapted the suggestions to match my Figma scaffold.
 
 No AI was used for written portfolio content, visual design, project selection, implementation decisions, Figma mockups, color palette decisions, or the selection and categorization of my engineering and graphic design assets.
 
