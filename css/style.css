@@ -50,6 +50,7 @@
     --dim-gold: hsl(45, 100%, 32%);
     --bright-gold: hsl(47, 100%, 50%);
     --black: hsl(0, 0%, 0%);
+    --black-semi-opaque: hsla(0, 0%, 0%, 0.8);
     --black-translucent: hsla(0, 0%, 0%, 0.6);
     --charcoal: hsl(0, 0%, 13%);
     --sky-blue: hsl(180, 98%, 50%);
@@ -474,7 +475,7 @@ footer .nav-links a:focus-visible {
 }
 
 .project-hero-text {
-    bottom: var(--space-normal);
+    bottom: calc(var(--space-loose) * 0.75);
     left: var(--space-normal);
     position: absolute;
 }
@@ -484,7 +485,7 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
    Reviewed and adapted to match my Figma design and course scope. */
 .hero-texture {
     background-image: url("../images/pjct-pg-bg/textured-grad-asset.png");
-    background-repeat: repeat;
+    background-repeat: repeat-x;
     bottom: 0;
     height: calc(var(--space-normal) * 1.5);
     left: 0;
@@ -563,11 +564,42 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
     my existing Week 5 color tokens — ChatGPT (GPT-5.6), 2026-11-19.*/
     background-image: url("../images/pjct-pg-bg/first-brand-proposal-hero.png");
     background-position: center bottom;
-    background-size: cover;
+}
+
+.action-adventure-rpg-hero {
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent 40%,
+            var(--black-translucent) 100%
+        ),
+        url("../images/pjct-pg-bg/action-adventure-rpg-hero.png");
+    background-position: center calc(var(--space-normal) * -3);
+}
+
+.color-splash-smash-hero {
+        background-image:
+        linear-gradient(
+            to bottom,
+            transparent 40%,
+            var(--black-translucent) 100%
+        ),
+        url("../images/pjct-pg-bg/color-splash-smash-hero-raw.png");
+    background-position: bottom;
+}
+
+.ftc-bake-sale-3-hero {
+        background-image:
+        linear-gradient(
+            to bottom,
+            transparent 10%,
+            var(--black-semi-opaque) 100%
+        ),
+        url("../images/pjct-pg-bg/ftc-bake-sale-3-hero.png");
+    background-position: center;
 }
 
 .ftc-robotics-hero {
     background-image: url("../images/pjct-pg-bg/ftc-robotics-hero.png");
-    background-position: center bottom;
-    background-size: cover;
+    background-position: center calc(var(--space-normal) * -1);
 }
