@@ -106,6 +106,7 @@ main {
 .content-wrapper {
     max-width: 60rem;
     margin-inline: auto;
+    padding-bottom: var(--space-loose);
 }
 
 body {
@@ -338,7 +339,7 @@ figcaption {
 }
 
 .hero {
-    padding-block: calc(var(--space-wide) * 2);
+    padding-block: calc(var(--space-loose) * 3);
     text-align: center;
 }
 
@@ -393,10 +394,12 @@ figcaption {
 .contact-card {
     background-color: var(--background-card);
     color: var(--charcoal);
-    border-radius: var(--border-radius-medium);
+    border-radius: var(--border-radius-large);
     margin-bottom: var(--space-normal);
     max-width: 48rem;
     margin-inline: auto;
+    padding: var(--space-normal);
+
 }
 
 .project-card h3,
@@ -419,7 +422,28 @@ figcaption {
     font-weight: var(--font-weight-semibold);
 }
 
+.portfolio-collection-title {
+    margin-bottom: var(--space-wide);
+}
+
+.project-card-image,
 .project-card-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.project-card-image {
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+    width: 35%;
+    border-radius: var(--border-radius-large);
+}
+
+.project-card-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 63%;
     padding: var(--space-slim);
 }
 
