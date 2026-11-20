@@ -255,6 +255,14 @@ footer .nav-links a:focus-visible {
     color: var(--brand);
 }
 
+figcaption {
+    font-family: var(--font-stack-system);
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-medium);
+    margin-top: var(--space-slim);
+    line-height: 1.2;
+}
+
 .primary-nav {
     position: relative;
 }
@@ -358,6 +366,7 @@ footer .nav-links a:focus-visible {
 }
 
 .project-button-wrapper {
+    margin: var(--space-loose) 0;
     text-align: center;
 }
 
@@ -370,7 +379,7 @@ footer .nav-links a:focus-visible {
     font-family: var(--font-stack-system);
     letter-spacing: var(--letter-spacing-wide);
     border-radius: var(--border-radius-large);
-    padding: var(--space-slim) var(--space-wide);
+    padding: var(--space-normal) calc(var(--space-loose) * .75);
 }
 
 .project-page h1 {
@@ -533,12 +542,16 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
 }
 
 .project-detail-row {
-    margin-bottom: var(--space-tight);
-    position: relative;
+    margin-bottom: var(--space-slim);
 }
 
 .project-detail-row:last-child {
     margin-bottom: 0;
+}
+
+.project-detail-label,
+.project-detail-value {
+    display: block;
 }
 
 .project-detail-label {
@@ -552,11 +565,8 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
     font-family: var(--font-stack-system);
     font-size: var(--font-size-body-small);
     font-weight: var(--font-weight-semibold);
-    margin: 0;
-    position: absolute;
-    right: 0;
+    margin: var(--space-tight) 0 0;
     text-align: right;
-    top: 0;
 }
 
 .first-brand-proposal-hero {
@@ -571,7 +581,7 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
         linear-gradient(
             to bottom,
             transparent 40%,
-            var(--black-translucent) 100%
+            var(--black-semi-opaque) 100%
         ),
         url("../images/pjct-pg-bg/action-adventure-rpg-hero.png");
     background-position: center calc(var(--space-normal) * -3);
@@ -616,3 +626,26 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
     background-image: url("../images/pjct-pg-bg/ftc-robotics-hero.png");
     background-position: center calc(var(--space-normal) * -1);
 }
+
+.mockup-virtual-pet-hero {
+        background-image:
+        linear-gradient(
+            to bottom,
+            transparent 10%,
+            var(--black-translucent) 60%
+        ),
+        url("../images/pjct-pg-bg/mockup-virtual-pet-hero.png");
+    background-position: center;
+}
+
+.torun-experience-hero {
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent 10%,
+            var(--black-translucent) 60%
+        ),
+        url("../images/pjct-pg-bg/torun-experience-hero.jpeg");
+    background-position: center;
+}
+
