@@ -216,7 +216,7 @@ footer h2 {
 footer .back-to-top {
     color: var(--brand);
     padding: var(--space-slim);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 footer .back-to-top:hover,
@@ -225,8 +225,10 @@ footer .back-to-top:focus-visible {
 }
 
 footer .copyright {
+    font-family: var(--font-stack-body);
     font-size: var(--font-size-body-small);
     font-weight: var(--font-weight-light);
+    font-style: italic;
     margin: var(--space-wide) 0 0;
 }
 
@@ -381,6 +383,7 @@ figcaption {
     letter-spacing: var(--letter-spacing-wide);
     border-radius: var(--border-radius-large);
     padding: var(--space-normal) calc(var(--space-loose) * .75);
+    text-decoration: none;
 }
 
 .project-page h1 {
