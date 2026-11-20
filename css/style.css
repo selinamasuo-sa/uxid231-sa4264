@@ -176,6 +176,11 @@ a:focus-visible {
     color: var(--brand);
 }
 
+a:focus-visible {
+    outline: var(--space-tight) dashed var(--bright-gold);
+    outline-offset: 0;
+}
+
 article a {
     text-decoration: none;
 }
@@ -219,11 +224,6 @@ footer .back-to-top {
     text-decoration: none;
 }
 
-footer .back-to-top:hover,
-footer .back-to-top:focus-visible {
-    color: var(--bright-gold);
-}
-
 footer .copyright {
     font-family: var(--font-stack-body);
     font-size: var(--font-size-body-small);
@@ -246,16 +246,31 @@ ul.nav-links {
 footer .nav-links li {
     padding: 0 0 var(--space-slim);
     color: var(--white);
-}   
+}
 
 footer .nav-links a {
     color: var(--white);
     text-decoration: none;
+}   
+
+footer .nav-links a:hover {
+    color: var(--brand);
 }
 
-footer .nav-links a:hover,
 footer .nav-links a:focus-visible {
-    color: var(--brand);
+    color: var(--bright-gold);
+    outline: none;
+    text-decoration: underline;
+}
+
+footer .back-to-top:hover {
+    color: var(--bright-gold);
+}
+
+footer .back-to-top:focus-visible {
+    color: var(--bright-gold);
+    outline: none;
+    text-decoration: underline;
 }
 
 figcaption {
@@ -298,6 +313,11 @@ figcaption {
     margin-bottom: 0;
 }
 
+.nav-dropdown .nav-links a:focus-visible {
+    color: var(--brand);
+    outline: none;
+}
+
 .nav-dropdown a {
     font-family: var(--font-stack-display);
     font-size: var(--font-size-display-small);
@@ -315,6 +335,14 @@ figcaption {
 
 .menu-toggle::-webkit-details-marker {
     display: none;
+}
+
+.menu-toggle:focus-visible {
+    outline: none;
+}
+
+.menu-toggle:focus-visible .menu-bar {
+    background-color: var(--bright-gold);
 }
 
 .menu-bar {
@@ -401,13 +429,30 @@ figcaption {
     margin-bottom: var(--space-normal);
     max-width: 48rem;
     margin-inline: auto;
-    padding: var(--space-normal);
-
 }
+
 
 .project-card h3,
 .project-card a {
     color: var(--charcoal);
+}
+
+.project-card > a,
+.contact-card > a {
+    display: block;
+    padding: var(--space-normal);
+}
+
+
+/* AI: prompt asking how to create a focus-visible outline marquee effect similar to z-targetting
+in The Legend of Zelda: Ocarina of Time using my existing tokens — ChatGPT (GPT-5.6), 2026-11-20.
+Reviewed and adapted to match my Figma design and course scope. */
+.project-card a:focus-visible,
+.contact-card a:focus-visible,
+.project-gold-button:focus-visible {
+    border-radius: var(--border-radius-large);
+    outline: var(--space-tight) dashed var(--bright-gold);
+    outline-offset: var(--space-slim);
 }
 
 /* AI: prompt asking how to style hover and focus effects for cards/links using my
@@ -675,4 +720,3 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
         url("../images/pjct-pg-bg/torun-experience-hero.jpeg");
     background-position: center;
 }
-
