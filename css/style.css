@@ -726,3 +726,12 @@ fade out effect seen in my Figma design — ChatGPT (GPT-5.6), 2026-11-19.
         url("../images/pjct-pg-bg/torun-experience-hero.jpeg");
     background-position: center;
 }
+
+.project-video {
+    border: var(--border-radius-small) solid var(--brand);
+    border-radius: var(--border-radius-large);
+    display: block;
+    height: auto;
+    margin-inline: auto;
+    max-width: 100%;
+}
